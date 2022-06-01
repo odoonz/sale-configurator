@@ -8,6 +8,7 @@
                 <field name="sequence" widget="handle" />
                 <field name="product_id" />
                 <field name="product_uom_id" />
+                <field name="option_qty_default" />
                 <field name="option_qty_type" />
                 <field name="is_default_option" />
             </tree>

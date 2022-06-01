@@ -59,6 +59,9 @@ class ProductConfiguratorOption(models.Model):
         compute="_compute_used_on_product_template",
     )
 
+    #### Odoonz Changes here
+    option_qty_default = fields.Float('Default Quantity', required=True, digits='Product Unit of Measure', default=1)
+
     def _compute_used_on_product_template(self):
         for record in self:
             record.used_on_product_tmpl_ids = (

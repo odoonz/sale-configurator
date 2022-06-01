@@ -162,6 +162,7 @@ class SaleOrderLine(models.Model):
                             "product_id": opt.product_id.id,
                             "parent_option_id": self.id,
                             "order_id": self.order_id.id,
+                            "option_unit_qty": opt.option_qty_default
                         }
                     )
                     option.product_id_change()
